@@ -1,0 +1,297 @@
+/* CSS Atualizado para Centralização, Responsividade e Estrutura Profissional */
+
+/* Reset e Box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Container principal para centralizar conteúdo */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Banner */
+.banner {
+  background: url('../img/interno/conforto.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay para melhor legibilidade */
+}
+
+.banner__content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+/* Responsividade para banner */
+@media (max-width: 768px) {
+  .banner {
+    padding: 40px 20px;
+  }
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 220px;
+    padding: 20px;
+  }
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+  .banner p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.conteudo-principal h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f4c542;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Grid de conforto */
+.conforto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.conforto-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.conforto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.conforto-card i {
+  font-size: 3rem;
+  color: #f4c542;
+  margin-bottom: 15px;
+}
+
+.conforto-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.conforto-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Grid de bebidas */
+.bebidas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.bebida-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+}
+
+.bebida-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bebida-card i {
+  font-size: 3rem;
+  color: #f4c542;
+  margin-bottom: 15px;
+}
+
+.bebida-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bebida-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  .conteudo-principal {
+    padding: 30px 0;
+  }
+  .conteudo-principal h2 {
+    font-size: 1.8rem;
+  }
+  .conforto-grid,
+  .bebidas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudo-principal h2 {
+    font-size: 1.5rem;
+  }
+  .conforto-grid,
+  .bebidas-grid {
+    grid-template-columns: 1fr;
+  }
+  .conforto-card,
+  .bebida-card {
+    padding: 15px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #051d40;
+  color: #fff;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #f4c542;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #f4c542;
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.back-to-top {
+  background-color: #f4c542;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

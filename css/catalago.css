@@ -1,0 +1,157 @@
+/* Estilos para o catálogo de serviços */
+#catalogo-servicos {
+    background: linear-gradient(135deg, #f4f4f4 0%, #e8f4f8 100%);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.servico-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+}
+
+.servico-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.servico-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.servico-card:hover .servico-img {
+    transform: scale(1.1);
+}
+
+.servico-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(52, 152, 219, 0.9));
+    color: #fff;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.4s;
+}
+
+.servico-card:hover .servico-overlay {
+    transform: translateY(0);
+}
+
+.servico-overlay h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.servico-overlay p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.servico-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+/* Responsividade para catálogo */
+@media (max-width: 768px) {
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+    .servico-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Banner */
+.banner {
+    background: url('../img/interno/painel\ \(2\).jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.banner__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Overlay para melhor legibilidade */
+}
+
+.banner__content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Responsividade para banner */
+@media (max-width: 768px) {
+    .banner {
+        padding: 40px 20px;
+    }
+    .banner h1 {
+        font-size: 2rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        min-height: 220px;
+        padding: 20px;
+    }
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+    .banner p {
+        font-size: 0.9rem;
+    }
+}
