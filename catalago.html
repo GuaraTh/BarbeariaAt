@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de Serviços da Barbearia Exemplo - Cortes, barba e mais para homens.">
+    <meta name="keywords" content="serviços barbearia, cortes, barba">
+    <title>Catálogo de Serviços - Barbearia Exemplo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Arquivo CSS principal (assumido) -->
+    <link rel="stylesheet" href="css/catalago.css"> <!-- CSS do catálogo -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Barbearia Exemplo</div>
+            <ul class="nav-links">
+                <li><a href="index.html#banner"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="#catalogo-servicos"><i class="fas fa-cut"></i> Catálogo</a></li>
+                <li><a href="produtos.html"><i class="fas fa-shopping-cart"></i> Produtos</a></li>
+                <li><a href="conforto.html"><i class="fas fa-coffee"></i> Conforto</a></li>
+                <li><a href="index.html#localizacao"><i class="fas fa-map-marker-alt"></i> Local</a></li>
+
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="banner" class="banner" role="img" aria-label="Imagem de fundo da barbearia">
+        <div class="banner__overlay"></div>
+        <div class="banner__content">
+            <h1>Nossos Serviços</h1>
+            <p>Serviços e comodidades para tornar sua experiência inesquecível.</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="catalogo-servicos">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos uma variedade de serviços personalizados para atender às suas necessidades de estilo e cuidado pessoal.</p>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <img src="img/servicos/WhatsApp Image 2025-11-21 at 11.46.16.jpeg" alt="Corte Clássico" class="servico-img">
+                    <i class="fas fa-scissors servico-icon"></i>
+                    <div class="servico-overlay">
+                        <h3>Corte Clássico</h3>
+                        <p>Um corte tradicional, perfeito para o dia a dia. Inclui lavagem e acabamento profissional.</p>
+                        <a href="https://sites.appbarber.com.br/links/barbeariavaleouro?fbclid=PAZXh0bgNhZW0CMTEAAaba0bvubW3ZXItjcC6GSv729E02S3K3MrS_EIA2CVVYMf1LvFZRYGXc1hs_aem_Sk6lxNV_S-honGB8fH746Q" target="_blank" class="cta-button schedule">Agendar</a>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <img src="img/servicos/servico.png" alt="Corte Moderno" class="servico-img">
+                    <i class="fas fa-cut servico-icon"></i>
+                    <div class="servico-overlay">
+                        <h3>Corte Moderno</h3>
+                        <p>Estilo contemporâneo com toques de tendência. Ideal para jovens.</p>
+                        <a href="https://sites.appbarber.com.br/links/barbeariavaleouro?fbclid=PAZXh0bgNhZW0CMTEAAaba0bvubW3ZXItjcC6GSv729E02S3K3MrS_EIA2CVVYMf1LvFZRYGXc1hs_aem_Sk6lxNV_S-honGB8fH746Q" target="_blank" class="cta-button schedule">Agendar</a>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <img src="img/servicos/Captura de tela_22-11-2025_20545_www.instagram.com.jpeg" alt="Barba Completa" class="servico-img">
+                    <i class="fas fa-user-tie servico-icon"></i>
+                    <div class="servico-overlay">
+                        <h3>Barba Completa</h3>
+                        <p>Tratamento completo para barba e bigode, com óleo hidratante.</p>
+                        <a href="https://sites.appbarber.com.br/links/barbeariavaleouro?fbclid=PAZXh0bgNhZW0CMTEAAaba0bvubW3ZXItjcC6GSv729E02S3K3MrS_EIA2CVVYMf1LvFZRYGXc1hs_aem_Sk6lxNV_S-honGB8fH746Q" target="_blank" class="cta-button schedule">Agendar</a>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <img src="img/servicos/WhatsApp Image 2025-11-22 at 17.49.18.jpeg" alt="Sobrancelha" class="servico-img">
+                    <i class="fas fa-eye servico-icon"></i>
+                    <div class="servico-overlay">
+                        <h3>Design de Sobrancelha</h3>
+                        <p>Modelagem precisa para um olhar definido e elegante.</p>
+                        <a href="https://sites.appbarber.com.br/links/barbeariavaleouro?fbclid=PAZXh0bgNhZW0CMTEAAaba0bvubW3ZXItjcC6GSv729E02S3K3MrS_EIA2CVVYMf1LvFZRYGXc1hs_aem_Sk6lxNV_S-honGB8fH746Q" target="_blank" class="cta-button schedule">Agendar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#cortes">Cortes</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#conforto">Conforto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais & Apps</h4>
+                <div class="social-icons">
+                    <a href="https://wa.me/5512991898466" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/barbeariavaleouro" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@barbeariavaleouro.com</p>
+                <p>Tel: (12) 99189-8466</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Barbearia VALE OURO. Todos os direitos reservados.</p>
+            <button onclick="scrollToTop()" class="back-to-top"><i class="fas fa-arrow-up"></i> Topo</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
